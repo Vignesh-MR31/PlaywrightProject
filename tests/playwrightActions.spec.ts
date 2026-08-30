@@ -33,7 +33,7 @@ test.describe("Verify the Playwright Actions", () => {
         });
     });
 
-    test.only("Checkbox Actions", async ({ page }) => {
+    test("Checkbox Actions", async ({ page }) => {
         await test.step("Go to page and check the checkbox actions", async () => {
             await page.goto("https://testautomationpractice.blogspot.com/");
             const days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
